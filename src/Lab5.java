@@ -115,6 +115,17 @@ public class Lab5 extends GLJPanel implements GLEventListener, KeyListener {
         gl2.glEnd();
     }
 
+    public void Triangle(GL2 gl2) {
+        gl2.glBegin(GL2.GL_TRIANGLES);
+        gl2.glColor3f(1.0f,1.0f,1.0f);
+        gl2.glVertex3f(-1.45f, -2.0f, 0.0f);
+        gl2.glColor3f(1.0f,0.0f,1.0f);
+        gl2.glVertex3f(0.0f, 5.0f, -4.85f);
+        gl2.glColor3f(0.0f,0.0f,0.0f);
+        gl2.glVertex3f(1.5f, -2.0f, 0.0f);
+
+    }
+
     public void CreatePiramid(GL2 gl2, double size, int n) {
         float[] X = new float[n]; //Współrzędne wierzchołków na osi X
         float[] Y = new float[n]; //Współrzędne wierzchołków na osi Y
